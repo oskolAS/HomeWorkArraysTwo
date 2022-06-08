@@ -30,7 +30,7 @@ public class Main {
         System.out.println("Максимальная сумма трат за день составила " + maximumSum + " рублей");
 
         // Задание 3.
-        double averageAmountDay = (double) summaMonth / 30;
+        double averageAmountDay = (double) summaMonth / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " +averageAmountDay + " рублей");
 
         //задача 4.
@@ -41,7 +41,7 @@ public class Main {
     }
 
 
-    public static int[] generateRandomArray() {
+    private static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
         for (int i = 0; i < arr.length; i++) {
